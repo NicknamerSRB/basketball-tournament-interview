@@ -1,0 +1,12 @@
+{
+  "name": "basketball-tournament-interview",
+  "version": "1.0.0",
+  "description": "Simulate a basketball tournament for the Olympic Games",
+  "main": "index.js",
+  "scripts": {
+    "start": "node index.js"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC"
+}

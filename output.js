@@ -24,35 +24,7 @@ function displayQuarterfinalsDraw(quarterfinals) {
   });
 }
 
-function displayKnockoutResults(knockoutResults) {
-  console.log("\nKnockout Stage Results:");
-
-  console.log("\nQuarterfinals:");
-  knockoutResults.quarterfinals.forEach((match) => {
-    console.log(
-      `${match.winner.Team} ${match.winner.Score} - ${match.loser.Score} ${match.loser.Team}`
-    );
-  });
-
-  console.log("\nSemifinals:");
-  knockoutResults.semifinals.forEach((match) => {
-    console.log(
-      `${match.winner.Team} ${match.winner.Score} - ${match.loser.Score} ${match.loser.Team}`
-    );
-  });
-
-  console.log("\nBronze Match:");
-  const bronze = knockoutResults.bronze;
-  console.log(
-    `${bronze.winner.Team} ${bronze.winner.Score} - ${bronze.loser.Score} ${bronze.Team}`
-  );
-
-  console.log("\nFinal Match:");
-  const finalMatch = knockoutResults.final;
-  console.log(
-    `${finalMatch.winner.Team} ${finalMatch.winner.Score} - ${finalMatch.loser.Score} ${finalMatch.Team}`
-  );
-
+function displayMedalWinners(knockoutResults) {
   console.log("\nMedal Winners:");
   knockoutResults.medalists.forEach((medalist) => {
     console.log(`${medalist.medal}: ${medalist.team.Team}`);
@@ -63,5 +35,5 @@ module.exports = {
   displayGroupResults,
   displayRankings,
   displayQuarterfinalsDraw,
-  displayKnockoutResults,
+  displayMedalWinners,
 };

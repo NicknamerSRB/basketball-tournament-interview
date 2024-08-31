@@ -8,7 +8,7 @@ const {
   displayGroupResults,
   displayRankings,
   displayQuarterfinalsDraw,
-  displayKnockoutResults,
+  displayMedalWinners,
 } = require("./output");
 
 const groupsData = JSON.parse(
@@ -36,4 +36,4 @@ displayQuarterfinalsDraw(quarterfinals);
 console.log("\nStarting Knockout Stage...");
 const knockoutResults = simulateKnockoutStage(quarterfinals);
 
-displayKnockoutResults(knockoutResults);
+displayMedalWinners(knockoutResults);
